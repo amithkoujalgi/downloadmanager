@@ -8,3 +8,5 @@ git clone https://github.com/koujalgi-amith/downloadmanager.git ~/git/downloadma
 cd ~/git/downloadmanager/scripts
 sh run.sh
 ```
+
+Original code: https://github.com/ziahamza/webui-aria2
