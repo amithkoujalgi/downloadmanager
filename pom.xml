@@ -22,7 +22,7 @@
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
-					<finalName>app</finalName>
+					<finalName>DownloadManager</finalName>
 					<archive>
 						<manifest>
 							<mainClass>com.amithkoujalgi.downloadmanager.entry.Entry</mainClass>
