@@ -4,7 +4,7 @@ command -v aria2c >/dev/null 2>&1 || { echo "Installing Aria2 Library" >&2; sudo
 aria2c --enable-rpc --rpc-listen-all &
 if [ ! -f ../target/DownloadManager-jar-with-dependencies.jar ]; then
     echo "Jar not Found, Running Build. . ." &
-    mvn -f ../pom.xml clean compile ass!!embly:single
+    mvn -f ../pom.xml clean compile assembly:single
 fi
 java -jar ../target/DownloadManager-jar-with-dependencies.jar &
 sleep 5
