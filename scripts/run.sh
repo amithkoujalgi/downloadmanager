@@ -11,7 +11,7 @@ fi
 if [ "$os" == "linux" ]; then
     command -v aria2c >/dev/null 2>&1 || { echo "Installing Aria2 Library" >&2; sudo apt-get -y install aria2;}
 elif [ "$os" == "mac" ]; then
-    brew install aria2 #Still need to check for installation and then install.
+    command -v aria2c >/dev/null 2>&1 || { echo "Installing Aria2 Library" >&2; brew install aria2;} #Requires Testing
 elif [ "$os" == "windows" ]; then
     #Install windows cygwin
 
