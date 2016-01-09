@@ -19,7 +19,7 @@ elif [ "$os" == "windows" ]; then
 aria2c --enable-rpc --rpc-listen-all &
 if [ ! -f ../target/DownloadManager-jar-with-dependencies.jar ]; then
     echo "Jar not Found, Running Build. . ." &
-    mvn -f ../pom.xml clean compile ass!!embly:single
+    mvn -f ../pom.xml clean compile assembly:single
 fi
 java -jar ../target/DownloadManager-jar-with-dependencies.jar &
 sleep 5
